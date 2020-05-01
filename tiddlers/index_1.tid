@@ -1,8 +1,8 @@
 caption: Home
 created: 20200501112255107
-modified: 20200501123904192
+modified: 20200501184844573
 tags: public
-title: Index
+title: index
 type: text/vnd.tiddlywiki
 
 Tiddlywiki 5 can be used to generate static HTML representations of a Tiddlywiki that doesn't need ~JavaScript. This process requires that Tiddlywiki be installed on Node.js on your local system. See [[Installing Tiddlywiki on Node.js|https://tiddlywiki.com/#Installing%20TiddlyWiki%20on%20Node.js]] for details.
