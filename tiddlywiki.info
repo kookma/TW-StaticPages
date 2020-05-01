@@ -1,0 +1,69 @@
+{
+    "description": "Empty edition",
+    "plugins": [
+		"tiddlywiki/filesystem",
+		"tiddlywiki/tiddlyweb",
+		"tiddlywiki/codemirror",
+		"tiddlywiki/codemirror-closebrackets",
+		"tiddlywiki/codemirror-search-replace",		
+		"kookma/commander",
+		"flibbles/relink",
+		"kookma/utility",
+		"kookma/favorites",
+		"kookma/shiraz"
+		
+	],
+    "themes": [
+        "tiddlywiki/vanilla",
+        "tiddlywiki/snowwhite"
+    ],
+    "build": {
+        "index": [
+            "--rendertiddler",
+            "$:/core/save/all",
+            "index.html",
+            "text/plain"
+        ],
+        "empty": [
+            "--rendertiddler",
+            "$:/core/save/all",
+            "empty.html",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/save/all",
+            "empty.hta",
+            "text/plain"
+        ],
+        "externalimages": [
+            "--savetiddlers",
+            "[is[image]]",
+            "images",
+            "--setfield",
+            "[is[image]]",
+            "_canonical_uri",
+            "$:/core/templates/canonical-uri-external-image",
+            "text/plain",
+            "--setfield",
+            "[is[image]]",
+            "text",
+            "",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/save/all",
+            "externalimages.html",
+            "text/plain"
+        ],
+        "static": [
+			"--output", "docs",	
+   		    "--rendertiddlers",
+                "[!is[system]tag[public]]",
+                "$:/kookma/templates/static.tiddler.html-wrapper",
+                "",
+				"text/plain",
+            "--rendertiddler",
+				"$:/kookma/templates/static.template.css",
+				"static.css",
+				"text/plain"
+		]
+    }
+}

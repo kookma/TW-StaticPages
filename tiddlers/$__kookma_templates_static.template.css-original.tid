@@ -1,0 +1,9 @@
+created: 20200501114849229
+modified: 20200501114857432
+tags: 
+title: $:/kookma/templates/static.template.css-original
+type: text/vnd.tiddlywiki
+
+{{$:/boot/boot.css||$:/core/templates/plain-text-tiddler}}
+
+{{$:/core/ui/PageStylesheet||$:/core/templates/wikified-tiddler}}

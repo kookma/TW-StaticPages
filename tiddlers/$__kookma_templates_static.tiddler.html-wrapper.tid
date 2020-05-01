@@ -1,0 +1,10 @@
+created: 20200501113406526
+modified: 20200501152733474
+tags: 
+title: $:/kookma/templates/static.tiddler.html-wrapper
+type: text/vnd.tiddlywiki
+
+<$view 
+  tiddler="$:/kookma/templates/static.tiddler.html" 
+	format="plainwikified" 
+	mode="inline"/>

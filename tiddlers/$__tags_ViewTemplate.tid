@@ -1,0 +1,5 @@
+created: 20200501163914715
+list: $:/kookma/ui/ViewTemplate/titleN $:/core/ui/ViewTemplate/title $:/core/ui/ViewTemplate/unfold $:/core/ui/ViewTemplate/subtitle $:/core/ui/ViewTemplate/tags $:/core/ui/ViewTemplate/classic $:/core/ui/ViewTemplate/body $:/core/ui/ViewTemplate/import $:/core/ui/ViewTemplate/plugin $:/plugins/kookma/shiraz/viewtemplates/sticky-footer $:/plugins/kookma/utility/viewtemplate/display-tiddler-raw-content
+modified: 20200501163914727
+title: $:/tags/ViewTemplate
+type: text/vnd.tiddlywiki

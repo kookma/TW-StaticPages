@@ -1,0 +1,15 @@
+created: 20200501173015905
+modified: 20200501174024026
+tags: public
+title: WebApp
+type: text/vnd.tiddlywiki
+
+!! Definition
+A web application is a computer program that utilizes web browsers and web technology to perform tasks over the Internet.
+
+!! Overview
+Millions of businesses use the Internet as a cost-effective communications channel. It lets them exchange information with their target market and make fast, secure transactions. However, effective engagement is only possible when the business is able to capture and store all the necessary data, and have a means of processing this information and presenting the results to the user.
+
+Web applications use a combination of server-side scripts (PHP and ASP) to handle the storage and retrieval of the information, and client-side scripts (JavaScript and HTML) to present information to users. This allows users to interact with the company using online forms, content management systems, shopping carts and more. In addition, the applications allow employees to create documents, share information, collaborate on projects, and work on common documents regardless of location or device.
+
+Ref: [[stackpath|https://blog.stackpath.com/web-application/]]

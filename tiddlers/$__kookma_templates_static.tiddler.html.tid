@@ -1,0 +1,36 @@
+created: 20200501112042935
+modified: 20200501164229500
+tags: 
+title: $:/kookma/templates/static.tiddler.html
+type: text/vnd.tiddlywiki
+
+\define tv-wikilink-template() $uri_doubleencoded$.html
+\define tv-config-toolbar-icons() no
+\define tv-config-toolbar-text() no
+\define tv-config-toolbar-class() tc-btn-invisible
+\import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!has[draft.of]]
+`<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="`{{$:/core/templates/version}}`" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="static.css">
+<title>`<$view field="caption"><$view field="title"/></$view>: {{$:/core/wiki/title}}`</title>
+</head>
+<body class="tc-body hg">
+<header class="hg-header">`{{$:/kookma/static-header||$:/core/templates/html-tiddler}}`</header>
+<main class="hg-main"><h2 style="font-weight:700;">`<$text text=<<currentTiddler>>/>`</h2>`<$view tiddler="$:/kookma/ui/ViewTemplate" format="htmlwikified"/>`</main>
+<aside class="hg-left">`{{$:/kookma/aside-left||$:/core/templates/html-tiddler}}`</aside>
+<aside class="hg-right">`<$tiddler tiddler=<<currentTiddler>>>{{$:/kookma/aside-right||$:/core/templates/html-tiddler}}</$tiddler>`</aside>
+<footer class="hg-footer">`{{$:/kookma/static-footer||$:/core/templates/html-tiddler}}`</footer>
+</body>
+</html>
+`

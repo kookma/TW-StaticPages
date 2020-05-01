@@ -1,0 +1,21 @@
+created: 20200501174347985
+modified: 20200501175251342
+tags: 
+title: extra.css
+type: text/css
+
+.hg{ /* by Mohammad: changes on holy-grids */
+	margin:0 auto;
+	width:56em;
+	
+  grid-template-rows:
+	  80px 
+	  1fr 
+	  60px;
+}
+
+h2 {
+font-weight:700;
+font-size:0.9em;
+color:darkgreen;
+}

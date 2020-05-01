@@ -1,0 +1,11 @@
+created: 20200501111334024
+modified: 20200501174522290
+tags: 
+title: $:/kookma/templates/static.template.css
+type: text/vnd.tiddlywiki
+
+{{ire-style.css}}
+
+{{ire-holygrail.css}}
+
+{{extra.css}}

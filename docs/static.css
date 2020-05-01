@@ -1,0 +1,156 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/* Custom Styles */
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	font-family: 'Open Sans';
+}
+
+p {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.hg-header {
+	background-color: #ffdb3a;
+	font-size: 2rem;
+	font-weight: 700;
+	/*font-style: italic;   by Mohammad*/
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hg-footer {
+	background-color: rgb(100, 100, 100);
+	color: #fff;
+	font-size: 1.2rem;
+	font-style: italic;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hg-left,
+.hg-right {
+	background-color: rgb(230, 230, 230);
+	text-align: center;
+}
+
+.hg-header,
+.hg-left,
+.hg-right,
+.hg-main {
+	padding: 15px;
+}
+
+
+
+/*by Mohammad*/
+.hg-left ul{
+list-style-type:none;
+text-align: left;
+}/* **************************
+
+	Holy Grail Layout with CSS Grid
+
+************************** */
+
+/* Define grid areas */
+.hg-header { grid-area: header; }
+.hg-footer { grid-area: footer; }
+.hg-main { grid-area: main; }
+.hg-left { grid-area: navigation; }
+.hg-right { grid-area: ads; }
+
+
+.hg {
+	display: grid;
+	grid-template-areas: "header header header"
+	                     "navigation main ads"
+	                     "footer footer footer";
+
+	grid-template-columns: 150px 1fr 150px;
+
+	grid-template-rows: 100px 
+						1fr 
+						30px;
+
+	min-height: 100vh;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.hg {
+		grid-template-areas: "header"
+		                     "navigation"
+		                     "main"
+		                     "ads"
+		                     "footer";
+
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 
+							50px 
+							1fr
+							50px 
+							30px;
+	}
+}.hg{ /* by Mohammad: changes on holy-grids */
+	margin:0 auto;
+	width:56em;
+	
+  grid-template-rows:
+	  80px 
+	  1fr 
+	  60px;
+}
+
+h2 {
+font-weight:700;
+font-size:0.9em;
+color:darkgreen;
+}
